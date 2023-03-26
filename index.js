@@ -9,13 +9,14 @@ const date = require(__dirname + "/date.js");
 const app = express();
 
 // set an array for the default items in the list
-let items = ["Buy Food", "Prepare Food", "Cook Food", "Eat Food"];
+let items = ["Buy Food", "Prepare Food", "Cook Food", "Eat Food", "Clean Plates"];
 // set an empty array for new work items
-let workItems = ["Show Up"];
-// create new array for fun items
-let funItems = ["Watch TV", "Read a Book"];
+let workItems = ["Show Up", "Get Settled", "Drink Coffee"];
+
+// setup an array for Fun and another for Weekend
+let funitems = ["Netflix", "Play board games", "EatPopcorn raisinets"];
 // set an empty array for new weekend items
-let weekendItems = ["Relax", "Watch TV"];
+let weekenditems = ["Sleep", "Eat", "Complete ICS Homework"];
 
 // set EJS as the viewing engine to display html
 app.set('view engine', 'ejs');
